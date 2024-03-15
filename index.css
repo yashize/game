@@ -1,0 +1,36 @@
+section{
+    background-color: bisque;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+
+}
+
+header{
+    background-color: aqua;
+    padding: 0.5rem;
+ text-transform: uppercase;
+}
+
+.container{
+    background-color: bisque;
+    padding: 1rem;
+
+}
+
+.comm{
+    background-color: aquamarine
+}
+
+.card{
+    padding: 1rem;
+    background-image: url(mermaid1.jpg);
+    background-size: cover;
+    height: 50vh;
+}
+ footer{
+    background-color: brown;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+ }
