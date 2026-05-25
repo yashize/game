@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BlackJack GAME</title>
-  </head>
-  <link rel="stylesheet" href="index.css" />
-  <body>
-    <section>
-    <header>
-      <h1>mermaid Hunt!</h1>
-    
-    </header>
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Mermaid Hunt</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<section id="game-window">
+
+  <header>
+    <h1>🧜 Mermaid Hunt</h1>
+  </header>
+
+  <div class="container">
+
     <div class="comm">
-    <p id="hook-el">Hooks:</p>
-    <p id="sum-el">Trap strength:</p> 
-    </div>
-    <div class="card">
-      <div>
-        <h2 id="message-el"></h2>
-        <p id="player-el"></p>
-        <p id="result-el"></p>
-      </div>
+
+      <p id="hook-el">Hooks:</p>
+
+ <div class="trap-wrapper">
+  <p class="label">Trap Strength</p>
+  <div class="trap-bar">
+    <div id="trap-fill"></div>
+  </div>
+</div>
+
     </div>
 
-    <footer>
-    <button id="stat-btn" onclick="startGame()">START GAME</button>
-    <button id="newhk-btn" onclick="newHook()">PICK NEW HOOKS</button>
-    <button id="restore-el" onclick="tryAgain()">TRY AGAIN</button>
-    <button id="game2-el" onclick="startGame2()">LEVEL 2</button>
-  </footer>
-    </section>
-    
+    <div class="card" id="card-el">
+
+      <div class="overlay">
+
+        <h2 id="message-el">
+          Welcome Captain!
+        </h2>
+
+        <p id="player-el"></p>
+
+        <p id="result-el"></p>
+
+      </div>
+
     </div>
-    <script src="index.js"></script>
-  </body>
+
+  </div>
+
+  <footer>
+
+    <button id="stat-btn"
+      onclick="startGame()">
+
+      START GAME
+
+    </button>
+
+    <button id="newhk-btn"
+      onclick="newHook()">
+
+      PICK NEW HOOKS
+
+    </button>
+
+    <button id="restore-el"
+      onclick="tryAgain()"
+      disabled>
+
+      TRY AGAIN
+
+    </button>
+
+    <button id="game2-el"
+      onclick="startGame2()"
+      disabled>
+
+      LEVEL 2
+
+    </button>
+
+  </footer>
+
+</section>
+
+<script src="index.js"></script>
+
+</body>
 </html>
